@@ -18,7 +18,7 @@ public abstract class ProviGenProvider extends ContentProvider {
 
     private List<Contract> contracts = new ArrayList<Contract>();
 
-    public UriMatcher uriMatcher;
+    private UriMatcher uriMatcher;
     private static final int ITEM = 1;
     private static final int ITEM_ID = 2;
     private SQLiteOpenHelper openHelper;
@@ -209,6 +209,10 @@ public abstract class ProviGenProvider extends ContentProvider {
         } else {
             return new String[]{element};
         }
+    }
+    
+    private UriMatcher getUriMatcher(){
+        return uriMatcher;
     }
 
 }
