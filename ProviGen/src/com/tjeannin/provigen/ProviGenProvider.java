@@ -211,7 +211,7 @@ public abstract class ProviGenProvider extends ContentProvider {
         }
     }
     
-    private UriMatcher getUriMatcher(){
+    public UriMatcher getUriMatcher(){
         return uriMatcher;
     }
 
