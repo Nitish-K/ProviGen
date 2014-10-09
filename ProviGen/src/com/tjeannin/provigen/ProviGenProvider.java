@@ -18,7 +18,7 @@ public abstract class ProviGenProvider extends ContentProvider {
 
     private List<Contract> contracts = new ArrayList<Contract>();
 
-    private UriMatcher uriMatcher;
+    public UriMatcher uriMatcher;
     private static final int ITEM = 1;
     private static final int ITEM_ID = 2;
     private SQLiteOpenHelper openHelper;
